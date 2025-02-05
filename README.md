@@ -20,10 +20,4 @@ Para usar este repositório, você precisará de:
 - **NVIDIA Docker Toolkit** (para uso de CUDA com Docker em máquinas com GPUs NVIDIA).
 - Sistema com **GPU NVIDIA** para aceleração de hardware (opcional, mas recomendado para aproveitamento total do CUDA).
 
-### Como Instalar Docker e NVIDIA Docker Toolkit
-
-1. **Docker**: [Instruções de instalação do Docker](https://docs.docker.com/get-docker/)
-2. **Docker Compose**: [Instruções de instalação do Docker Compose](https://docs.docker.com/compose/install/)
-3. **NVIDIA Docker**: [Instruções para instalar NVIDIA Docker](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/install-guide.html)s
-
 
