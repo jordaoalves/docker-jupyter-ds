@@ -1,0 +1,56 @@
+# Pacotes essenciais para ciência de dados e IA
+numpy
+pandas
+matplotlib
+seaborn
+scikit-learn
+
+# Instalação do pacote unsloth com extras específicos
+unsloth[cu121-torch250] @ git+https://github.com/unslothai/unsloth.git
+
+# Pacotes para NLP com Hugging Face
+transformers         # Biblioteca para trabalhar com modelos como BERT, GPT, T5, etc.
+datasets             # Biblioteca para carregar e manipular datasets de NLP
+tokenizers           # Tokenização eficiente para NLP
+
+# Modelos BERT específicos
+sentence-transformers # Para embeddings baseados em BERT (como para busca semântica, clustering, etc.)
+
+# Ferramentas adicionais de NLP
+spacy                # Biblioteca popular para NLP, especialmente para processamento de texto
+
+# Outros pacotes de NLP úteis
+nltk                 # Para tarefas básicas de NLP, como tokenização, stemming, etc.
+textblob             # Ferramenta simples para tarefas como análise de sentimentos
+flair                # Uma biblioteca que facilita o uso de modelos NLP, incluindo BERT
+
+# Bibliotecas para manipulação de imagens com OpenCV
+opencv-python        # OpenCV para manipulação de imagens (versão completa)
+
+# Ferramentas para manipulação de dados e visualização
+jupyterlab
+ipywidgets
+plotly
+
+# Outras bibliotecas de IA úteis
+fastapi             # Para criação de APIs rápidas com integração de IA
+uvicorn             # Para servidor ASGI, geralmente usado com FastAPI
+pydantic            # Para validação de dados no FastAPI
+requests            # Para fazer requisições HTTP
+scipy               # Para cálculos e manipulação avançada de dados
+openai              # Para integrar com o OpenAI API, se necessário
+pytorch-lightning   # Para facilitar a implementação de modelos PyTorch
+
+# LangChain, LangGraph e ferramentas relacionadas a fluxo de trabalho
+langchain_openai       
+langchain_core
+langchain_community
+langgraph           
+tavily-python
+langchain-community 
+langchainhub 
+langchain-chroma 
+
+
+
+

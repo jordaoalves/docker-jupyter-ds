@@ -1,0 +1,28 @@
+version: '3.8'
+
+services:
+  jupyter:
+    build: .
+    ports:
+      - "8888:8888"
+    volumes:
+      - ./workspace:/home/jovyan/work
+    environment:
+      - JUPYTER_ENABLE_LAB=yes
+      - JUPYTER_TOKEN=${JUPYTER_TOKEN} 
+      - JUPYTER_PASSWORD=${JUPYTER_PASSWORD} 
+      - CMAKE_ARGS=${CMAKE_ARGS} 
+      - FORCE_CMAKE=${FORCE_CMAKE}
+    runtime: nvidia
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [gpu]
+    stdin_open: true
+    tty: true
+    restart: unless-stopped
+    command: ["start-notebook.sh", "--NotebookApp.token=${JUPYTER_TOKEN}", "--NotebookApp.password=${JUPYTER_PASSWORD}"]
+
