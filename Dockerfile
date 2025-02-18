@@ -14,6 +14,7 @@ RUN apt-get update && apt-get install -y \
     nvidia-cuda-toolkit \
     git \
     vim \
+    ffmpeg \
     curl \
     && rm -rf /var/lib/apt/lists/*
 
